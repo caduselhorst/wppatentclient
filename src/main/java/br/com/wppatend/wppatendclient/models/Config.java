@@ -21,7 +21,7 @@ public class Config {
     
     protected Config() throws IOException {
         properties = new Properties();
-        properties.load(new FileInputStream(new File(System.getProperty("config.file"))));
+        properties.load(new FileInputStream(new File("config.properties")));
     }
     
     public static Config getInstance() throws IOException {

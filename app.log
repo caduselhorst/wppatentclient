@@ -321,3 +321,4 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 20/06/2020 15:19:19 INFO  ThreadConsultaProtocolo:54 - Novo protocolo associado ao operador. Protocolo 2020062013
 20/06/2020 15:19:19 INFO  ThreadPrintaChat:57 - Iniciando processamento do chat
 20/06/2020 15:20:52 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
+20/06/2020 16:15:36 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
