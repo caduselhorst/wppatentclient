@@ -3,7 +3,6 @@ br/com/wppatend/wppatendclient/FormLogin$3.class
 br/com/wppatend/wppatendclient/models/Config.class
 br/com/wppatend/wppatendclient/restapiclient/LogoutInfo.class
 br/com/wppatend/wppatendclient/restapiclient/User.class
-br/com/wppatend/wppatendclient/restapiclient/DisponivelInfo.class
 br/com/wppatend/wppatendclient/FormAtendimento$1.class
 br/com/wppatend/wppatendclient/FormLogin.class
 br/com/wppatend/wppatendclient/threads/ThreadConsultaProtocolo.class
