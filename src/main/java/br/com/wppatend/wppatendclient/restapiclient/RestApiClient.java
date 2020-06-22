@@ -6,12 +6,18 @@
 package br.com.wppatend.wppatendclient.restapiclient;
 
 import br.com.wppatend.wppatendclient.models.Config;
+import br.com.wppatend.wppatendclient.models.Finalizacao;
 import br.com.wppatend.wppatendclient.models.Protocolo;
+import com.sun.javafx.scene.control.skin.VirtualFlow;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
 import jakarta.ws.rs.client.WebTarget;
 import jakarta.ws.rs.core.MediaType;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import javax.naming.ldap.HasControls;
 import org.apache.log4j.Logger;
 
 
@@ -71,10 +77,11 @@ public class RestApiClient {
         
     }
     
-    public ApiReturn encerraProtocolo(Long id) {
+    public ApiReturn encerraProtocolo(Long id, Long finalizacao) {
     
         ProtocoloInfo info = new ProtocoloInfo();
         info.setIdProtocolo(id);
+        info.setIdFinalizacao(finalizacao);
         return client.target(urlApi)
                 .path("/protocolo")
                 .request()
@@ -112,6 +119,27 @@ public class RestApiClient {
                 .request()
                 .post(Entity.entity(info, MediaType.APPLICATION_JSON), ApiReturn.class);
         
+    }
+    
+    public List<Finalizacao> getFinalizacoes() {
+        String path = "/finalizacoes";
+        
+        List<HashMap> map = client.target(urlApi)
+                .path(path)
+                .request()
+                .get(List.class);
+        
+        List<Finalizacao> finalizacoes = new ArrayList<>();
+        
+        map.forEach(m -> {
+            Finalizacao f = new Finalizacao();
+            f.setId(Long.parseLong(m.get("id") + ""));
+            f.setDescricao((String) m.get("descricao"));
+            f.setDeleted((boolean) m.get("deleted") );
+            finalizacoes.add(f);
+        });
+        
+        return finalizacoes;
     }
     
 }

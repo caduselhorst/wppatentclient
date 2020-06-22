@@ -48,9 +48,9 @@ public class FormDetalhes extends javax.swing.JDialog {
             jTextField16.setText(pj.getCidade());
             jTextField17.setText(pj.getEstado());
             jTextField19.setText(pj.getCep());
-            jTextField21.setText(pj.getNumero_fixo());
-            jTextField22.setText(pj.getNumero_cel());
-            jTextField23.setText(pj.getNumero_wa());
+            jTextField21.setText(pj.getNumerofixo());
+            jTextField22.setText(pj.getNumerocel());
+            jTextField23.setText(pj.getNumerowa());
         }
     }
 

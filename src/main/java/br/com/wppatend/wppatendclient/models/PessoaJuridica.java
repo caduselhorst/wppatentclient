@@ -14,9 +14,9 @@ import java.util.List;
 public class PessoaJuridica {
 
     private Long idpessoaj;
-    private String numero_wa;
-    private String numero_cel;
-    private String numero_fixo;
+    private String numerowa;
+    private String numerocel;
+    private String numerofixo;
     private String razaosocial;
     private String fantasia;
     private String cnpj;
@@ -30,8 +30,8 @@ public class PessoaJuridica {
     private String cidade;
     private String estado;
     private String email;
-    private String data_cadastro;
-    private String data_atualizacao;
+    private String dataCadastro;
+    private String dataAtualizacao;
     private List<EmpresaAtv> atividades;
 
     public Long getIdpessoaj() {
@@ -42,28 +42,28 @@ public class PessoaJuridica {
         this.idpessoaj = idpessoaj;
     }
 
-    public String getNumero_wa() {
-        return numero_wa;
+    public String getNumerowa() {
+        return numerowa;
     }
 
-    public void setNumero_wa(String numero_wa) {
-        this.numero_wa = numero_wa;
+    public void setNumerowa(String numerowa) {
+        this.numerowa = numerowa;
     }
 
-    public String getNumero_cel() {
-        return numero_cel;
+    public String getNumerocel() {
+        return numerocel;
     }
 
-    public void setNumero_cel(String numero_cel) {
-        this.numero_cel = numero_cel;
+    public void setNumerocel(String numerocel) {
+        this.numerocel = numerocel;
     }
 
-    public String getNumero_fixo() {
-        return numero_fixo;
+    public String getNumerofixo() {
+        return numerofixo;
     }
 
-    public void setNumero_fixo(String numero_fixo) {
-        this.numero_fixo = numero_fixo;
+    public void setNumerofixo(String numerofixo) {
+        this.numerofixo = numerofixo;
     }
 
     public String getRazaosocial() {
@@ -170,20 +170,20 @@ public class PessoaJuridica {
         this.email = email;
     }
 
-    public String getData_cadastro() {
-        return data_cadastro;
+    public String getDataCadastro() {
+        return dataCadastro;
     }
 
-    public void setData_cadastro(String data_cadastro) {
-        this.data_cadastro = data_cadastro;
+    public void setDataCadastro(String dataCadastro) {
+        this.dataCadastro = dataCadastro;
     }
 
-    public String getData_atualizacao() {
-        return data_atualizacao;
+    public String getDataAtualizacao() {
+        return dataAtualizacao;
     }
 
-    public void setData_atualizacao(String data_atualizacao) {
-        this.data_atualizacao = data_atualizacao;
+    public void setDataAtualizacao(String dataAtualizacao) {
+        this.dataAtualizacao = dataAtualizacao;
     }
 
     public List<EmpresaAtv> getAtividades() {
@@ -193,9 +193,5 @@ public class PessoaJuridica {
     public void setAtividades(List<EmpresaAtv> atividades) {
         this.atividades = atividades;
     }
-
-    
-
-    
 
 }

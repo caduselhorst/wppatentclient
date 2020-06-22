@@ -20,7 +20,7 @@ public class PessoaFisica {
     private String cpf;
     private String rg;
     private String cep;
-    private String tipo_logradouro;
+    private String tipoLogradouro;
     private String logradouro;
     private String numero;
     private String complemento;
@@ -28,14 +28,15 @@ public class PessoaFisica {
     private String cidade;
     private String estado;
     private String email;
-    private Date data_cadastro;
-    private Date data_atualizacao;
+    private Date dataCadastro;
+    private Date dataAtualizacao;
+    private boolean desejaReceberOfertas;
 
     public Long getIdpessoaf() {
         return idpessoaf;
     }
 
-    public void setIdpessoa_f(Long idpessoaf) {
+    public void setIdpessoaf(Long idpessoaf) {
         this.idpessoaf = idpessoaf;
     }
 
@@ -43,7 +44,7 @@ public class PessoaFisica {
         return numerowa;
     }
 
-    public void setNumero_wa(String numerowa) {
+    public void setNumerowa(String numerowa) {
         this.numerowa = numerowa;
     }
 
@@ -51,7 +52,7 @@ public class PessoaFisica {
         return numerocel;
     }
 
-    public void setNumero_cel(String numerocel) {
+    public void setNumerocel(String numerocel) {
         this.numerocel = numerocel;
     }
 
@@ -87,12 +88,12 @@ public class PessoaFisica {
         this.cep = cep;
     }
 
-    public String getTipo_logradouro() {
-        return tipo_logradouro;
+    public String getTipoLogradouro() {
+        return tipoLogradouro;
     }
 
-    public void setTipo_logradouro(String tipo_logradouro) {
-        this.tipo_logradouro = tipo_logradouro;
+    public void setTipoLogradouro(String tipoLogradouro) {
+        this.tipoLogradouro = tipoLogradouro;
     }
 
     public String getLogradouro() {
@@ -151,20 +152,28 @@ public class PessoaFisica {
         this.email = email;
     }
 
-    public Date getData_cadastro() {
-        return data_cadastro;
+    public Date getDataCadastro() {
+        return dataCadastro;
     }
 
-    public void setData_cadastro(Date data_cadastro) {
-        this.data_cadastro = data_cadastro;
+    public void setDataCadastro(Date dataCadastro) {
+        this.dataCadastro = dataCadastro;
     }
 
-    public Date getData_atualizacao() {
-        return data_atualizacao;
+    public Date getDataAtualizacao() {
+        return dataAtualizacao;
     }
 
-    public void setData_atualizacao(Date data_atualizacao) {
-        this.data_atualizacao = data_atualizacao;
+    public void setDataAtualizacao(Date dataAtualizacao) {
+        this.dataAtualizacao = dataAtualizacao;
+    }
+
+    public boolean isDesejaReceberOfertas() {
+        return desejaReceberOfertas;
+    }
+
+    public void setDesejaReceberOfertas(boolean desejaReceberOfertas) {
+        this.desejaReceberOfertas = desejaReceberOfertas;
     }
 
 }

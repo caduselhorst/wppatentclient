@@ -6,6 +6,7 @@
 package br.com.wppatend.wppatendclient;
 
 import br.com.lgss.icecontrolclient.forms.FormDialogoDeOpcao;
+import br.com.wppatend.wppatendclient.models.Finalizacao;
 import br.com.wppatend.wppatendclient.models.Protocolo;
 import br.com.wppatend.wppatendclient.restapiclient.ApiReturn;
 import br.com.wppatend.wppatendclient.restapiclient.EstadoOperadorInfo;
@@ -16,6 +17,7 @@ import br.com.wppatend.wppatendclient.threads.ThreadPrintaChat;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.text.SimpleDateFormat;
+import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
 import javax.swing.JFrame;
@@ -36,6 +38,7 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         setaNomeOperador();
         instanciaApiClient();
         iniciaEstadoOperador();
+        carregaFinalizacoes();
     }
     
     private void setaNomeOperador() {
@@ -95,6 +98,10 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         jTextPaneChat.setText("");
         jLabelCorp.setText("-");
         
+    }
+    
+    private void carregaFinalizacoes() {
+        finalizacoes = apiClient.getFinalizacoes();
     }
     
 
@@ -452,22 +459,33 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
     private void jButtonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFinalizarActionPerformed
         try {
             if(FormDialogoDeOpcao.mostraDialogo("Confirmação", "Deseja encerrar esse atendimento?", this) == 0) {
-                setCursor(new Cursor(Cursor.WAIT_CURSOR));
-                desabilitaAtendimento();
-                apiClient.encerraProtocolo(protocolo.getId());
                 
-                protocolo = null;
-                if(monitorChat != null) {
-                    monitorChat.finalizar();
+                
+                setCursor(new Cursor(Cursor.WAIT_CURSOR));
+                
+                FormFinalizacao f = new FormFinalizacao(this, true, finalizacoes);
+                f.setVisible(true);
+                Finalizacao finalizacao = f.getFinalizacao();
+                f.dispose();
+                
+                if(finalizacao != null) {
+                    desabilitaAtendimento();
+                    apiClient.encerraProtocolo(protocolo.getId(), finalizacao.getId());
+
+                    protocolo = null;
+                    if(monitorChat != null) {
+                        monitorChat.finalizar();
+                    }
+                    consultaProtocolo = new ThreadConsultaProtocolo(user);
+                    if(!jToggleButton1.isSelected()) {
+                        consultaProtocolo.addObserver(this);
+                        Thread t = new Thread(consultaProtocolo);
+                        t.start();
+                    }
+                    estadoOperadorInfo.setEmAtendimento(false);
+                    alteraEstadoOperador();
                 }
-                consultaProtocolo = new ThreadConsultaProtocolo(user);
-                if(!jToggleButton1.isSelected()) {
-                    consultaProtocolo.addObserver(this);
-                    Thread t = new Thread(consultaProtocolo);
-                    t.start();
-                }
-                estadoOperadorInfo.setEmAtendimento(false);
-                alteraEstadoOperador();
+                
                 setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
             }
             
@@ -533,6 +551,7 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
     private static final Color EM_ATENDIMENTO_COLOR = new Color(255, 140, 0);
     private Protocolo protocolo;
     private EstadoOperadorInfo estadoOperadorInfo;
+    private List<Finalizacao> finalizacoes;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton4;
