@@ -8,4 +8,13 @@
 .classpath
 factoryConfiguration.json
 
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+target/
+
 # End of https://www.toptal.com/developers/gitignore/api/code-java
