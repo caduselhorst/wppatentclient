@@ -45,6 +45,7 @@ public class ThreadConsultaProtocolo extends Observable implements Runnable {
     @Override
     public void run() {
         logger.info("Iniciando verificação de protocolos -> Usuario: " + user.getUserName());
+        
         Protocolo p = api.getProtocolo(user.getId());
         while(p == null && !sair) {
             try {
@@ -56,25 +57,17 @@ public class ThreadConsultaProtocolo extends Observable implements Runnable {
                 logger.warn("Ocorreu um erro de interrupção de thread", e);
             }    
         }
-        
+
         if(p != null) {
+            logger.info("Identificado novo atendimento. Notificando observers");
             setChanged();
             notifyObservers(p);
+
         }
+ 
+            
+        logger.info("Verificação de protocolo finalizada.");
         
-        /*
-        txtIdProtocolo.setText(String.valueOf(p.getId()));
-        txtNroProtoolo.setText(p.getNumero());;
-        txtDataAbertura.setText(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(p.getDataAbertira()));
-        txtCliente.setText(p.getPessoaFisica().getNome());
-        txtContato.setText(p.getContato());
-        lblCorporativo.setText(p.getPessoaJuridica() == null ? "Não" : "Sim");
-        btnDetalhes.setEnabled(true);
-        btnFinalizar.setEnabled(true);
-        btnEnviar.setEnabled(true);
-        txtChat.setEnabled(true);
-        txtMsg.setEnabled(true);
-        */
     }
 
     

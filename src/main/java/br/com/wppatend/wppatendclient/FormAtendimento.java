@@ -5,9 +5,7 @@
  */
 package br.com.wppatend.wppatendclient;
 
-import br.com.lgss.icecontrolclient.forms.FormDialogoDeOpcao;
 import br.com.wppatend.wppatendclient.models.Finalizacao;
-import br.com.wppatend.wppatendclient.models.LinkController;
 import br.com.wppatend.wppatendclient.models.Protocolo;
 import br.com.wppatend.wppatendclient.restapiclient.ApiReturn;
 import br.com.wppatend.wppatendclient.restapiclient.EstadoOperadorInfo;
@@ -15,22 +13,12 @@ import br.com.wppatend.wppatendclient.restapiclient.RestApiClient;
 import br.com.wppatend.wppatendclient.restapiclient.User;
 import br.com.wppatend.wppatendclient.threads.ThreadConsultaProtocolo;
 import br.com.wppatend.wppatendclient.threads.ThreadPrintaChat;
-import jakarta.xml.bind.DatatypeConverter;
 import java.awt.Color;
 import java.awt.Cursor;
-import java.io.File;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.nio.file.Files;
-import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.filechooser.FileSystemView;
-import javax.swing.text.DefaultCaret;
-import org.apache.commons.io.FileUtils;
 
 /**
  *
@@ -70,47 +58,38 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         estadoOperadorInfo.setEmAtendimento(false);
     }
     
-    private void alteraEstadoOperador() {
+    public void alteraEstadoOperador() {
         apiClient.alteraEstadoOperador(estadoOperadorInfo.getIdUser(), 
                 estadoOperadorInfo.getDisponivel(), estadoOperadorInfo.getEmAtendimento());
     }
     
-    private void habilitaAtendimento() {
-        jButtonDetalhes.setEnabled(true);
-        jButtonFinalizar.setEnabled(true);
-        jButtonEnviar.setEnabled(true);
-        jTextFieldChat.setEnabled(true);
-        jTextFieldChat.requestFocus();
-        jTextPaneChat.setEnabled(true);
+    public void habilitaAtendimento() {
         jLabelEstadoOperador.setText("Em atendimento");
         jLabelEstadoOperador.setForeground(EM_ATENDIMENTO_COLOR);
     }
     
-    private void desabilitaAtendimento() {
-        jButtonDetalhes.setEnabled(false);
-        jButtonFinalizar.setEnabled(false);
-        jButtonEnviar.setEnabled(false);
-        jTextFieldChat.setEnabled(false);
-        jTextPaneChat.setEnabled(false);
+    public void desabilitaAtendimento() {
         if(jToggleButton1.isSelected()) {
             jLabelEstadoOperador.setText("On line");
             jLabelEstadoOperador.setForeground(ON_LINE_COLOR);
         } else {
             jLabelEstadoOperador.setText("Disponível");
             jLabelEstadoOperador.setForeground(DISPONIVEL_COLOR);
+            consultaProtocolo = new ThreadConsultaProtocolo(user);
+            consultaProtocolo.addObserver(this);
+            Thread t = new Thread(consultaProtocolo);
+            t.start();
         }
-        jTextFieldIdProtocolo.setText(null);
-        jTextFieldCliente.setText(null);
-        jTextFieldDataAbertura.setText(null);
-        jTextFieldFone.setText(null);
-        jTextFieldNroProtocolo.setText(null);
-        jTextPaneChat.setText("");
-        jLabelCorp.setText("-");
+        
         
     }
     
     private void carregaFinalizacoes() {
         finalizacoes = apiClient.getFinalizacoes();
+    }
+    
+    public EstadoOperadorInfo getEstadoOperadorInfo() {
+        return estadoOperadorInfo;
     }
     
 
@@ -123,28 +102,6 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPaneChat = new javax.swing.JTextPane();
-        jPanel4 = new javax.swing.JPanel();
-        jTextFieldChat = new javax.swing.JTextField();
-        jButtonEnviar = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabelCorp = new javax.swing.JLabel();
-        jButtonDetalhes = new javax.swing.JButton();
-        jTextFieldIdProtocolo = new javax.swing.JTextField();
-        jTextFieldNroProtocolo = new javax.swing.JTextField();
-        jTextFieldDataAbertura = new javax.swing.JTextField();
-        jTextFieldCliente = new javax.swing.JTextField();
-        jTextFieldFone = new javax.swing.JTextField();
-        jButtonFinalizar = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jLabelEstadoOperador = new javax.swing.JLabel();
         jToggleButton1 = new javax.swing.JToggleButton();
@@ -153,199 +110,6 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("WPPAtendimento");
-
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Chat"));
-
-        jTextPaneChat.setEditable(false);
-        jTextPaneChat.setEnabled(false);
-        ((DefaultCaret)jTextPaneChat.getCaret()).setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
-        LinkController linkController = new LinkController();
-        jTextPaneChat.addMouseListener(linkController);
-        jTextPaneChat.addMouseMotionListener(linkController);
-        jScrollPane1.setViewportView(jTextPaneChat);
-
-        jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jTextFieldChat.setEnabled(false);
-        jTextFieldChat.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextFieldChatKeyPressed(evt);
-            }
-        });
-
-        jButtonEnviar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/chat.png"))); // NOI18N
-        jButtonEnviar.setMnemonic('E');
-        jButtonEnviar.setText("Enviar");
-        jButtonEnviar.setEnabled(false);
-        jButtonEnviar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonEnviarActionPerformed(evt);
-            }
-        });
-
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/matricula.png"))); // NOI18N
-        jButton1.setMnemonic('A');
-        jButton1.setText("Arquivo");
-        jButton1.setToolTipText("");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTextFieldChat, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton1)
-                .addContainerGap())
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldChat, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonEnviar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1)
-            .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jScrollPane1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("Protocolo"));
-
-        jLabel1.setText("Id:");
-
-        jLabel2.setText("Número:");
-
-        jLabel3.setText("Data abertura:");
-
-        jLabel4.setText("Cliente:");
-
-        jLabel5.setText("Contato:");
-
-        jLabel6.setText("Corporativo:");
-
-        jLabelCorp.setText("-");
-
-        jButtonDetalhes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/empresa.png"))); // NOI18N
-        jButtonDetalhes.setMnemonic('D');
-        jButtonDetalhes.setText("Detalhes");
-        jButtonDetalhes.setEnabled(false);
-        jButtonDetalhes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDetalhesActionPerformed(evt);
-            }
-        });
-
-        jTextFieldIdProtocolo.setEditable(false);
-
-        jTextFieldNroProtocolo.setEditable(false);
-
-        jTextFieldDataAbertura.setEditable(false);
-        jTextFieldDataAbertura.setToolTipText("");
-
-        jTextFieldCliente.setEditable(false);
-
-        jTextFieldFone.setEditable(false);
-        jTextFieldFone.setToolTipText("");
-
-        jButtonFinalizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/finalizar.png"))); // NOI18N
-        jButtonFinalizar.setText("Finalizar atendimento");
-        jButtonFinalizar.setEnabled(false);
-        jButtonFinalizar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonFinalizarActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addComponent(jButtonDetalhes, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButtonFinalizar)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jTextFieldCliente)
-                            .addComponent(jTextFieldFone)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(jTextFieldIdProtocolo, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jTextFieldNroProtocolo, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jTextFieldDataAbertura, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE))
-                                    .addComponent(jLabelCorp, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE)))))
-                .addContainerGap())
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jTextFieldIdProtocolo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldNroProtocolo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldDataAbertura, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextFieldFone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabelCorp))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonDetalhes)
-                    .addComponent(jButtonFinalizar))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
 
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("Estado do operador"));
 
@@ -382,10 +146,12 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabelOperador)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabelEstadoOperador, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE))
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(jLabelEstadoOperador, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jToggleButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -395,31 +161,22 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabelEstadoOperador)
                     .addComponent(jLabelOperador))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
-                .addComponent(jToggleButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
-                .addContainerGap())
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jToggleButton1)
+                    .addComponent(jButton4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -430,6 +187,8 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         try {
             
             setCursor(new Cursor(Cursor.WAIT_CURSOR));
+            
+            consultaProtocolo.parar();
             
             ApiReturn ret = apiClient.logout(user.getId());
             
@@ -483,134 +242,23 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
             
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
-    private void jButtonFinalizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFinalizarActionPerformed
-        try {
-            if(FormDialogoDeOpcao.mostraDialogo("Confirmação", "Deseja encerrar esse atendimento?", this) == 0) {
-                
-                
-                setCursor(new Cursor(Cursor.WAIT_CURSOR));
-                
-                FormFinalizacao f = new FormFinalizacao(this, true, finalizacoes);
-                f.setVisible(true);
-                Finalizacao finalizacao = f.getFinalizacao();
-                f.dispose();
-                
-                if(finalizacao != null) {
-                    desabilitaAtendimento();
-                    apiClient.encerraProtocolo(protocolo.getId(), finalizacao.getId());
-
-                    protocolo = null;
-                    if(monitorChat != null) {
-                        monitorChat.finalizar();
-                    }
-                    consultaProtocolo = new ThreadConsultaProtocolo(user);
-                    if(!jToggleButton1.isSelected()) {
-                        consultaProtocolo.addObserver(this);
-                        Thread t = new Thread(consultaProtocolo);
-                        t.start();
-                    }
-                    estadoOperadorInfo.setEmAtendimento(false);
-                    alteraEstadoOperador();
-                }
-                
-                setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-            }
-            
-        } catch (Exception e) {
-            setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-            JOptionPane.showMessageDialog(this, "Ocorreu um erro ao executar o comando remoto:\n"
-                    + e.getMessage() + "\nContate o administrador do sistema.", "Erro", JOptionPane.ERROR_MESSAGE);
-        }
-        
-        
-    }//GEN-LAST:event_jButtonFinalizarActionPerformed
-
-    private void jButtonEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEnviarActionPerformed
-        if(!jTextFieldChat.getText().isEmpty()) {
-            try {
-                apiClient.enviaMensagem(protocolo.getContato(), jTextFieldChat.getText(), protocolo.getId());
-                jTextFieldChat.setText(null);
-                jTextFieldChat.requestFocus();
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(this, "Ocorreu um erro ao tentar enviar a mensagem:\n"
-                        + e.getMessage() + "\nInforme ao administrador do sistema", "Erro", JOptionPane.ERROR_MESSAGE);
-            }
-        }
-    }//GEN-LAST:event_jButtonEnviarActionPerformed
-
-    private void jTextFieldChatKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextFieldChatKeyPressed
-        if(evt.getKeyCode() == 10) {
-            jButtonEnviarActionPerformed(null);
-        }
-    }//GEN-LAST:event_jTextFieldChatKeyPressed
-
-    private void jButtonDetalhesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDetalhesActionPerformed
-        FormDetalhes f = new FormDetalhes(this, true, protocolo.getPessoaFisica(), protocolo.getPessoaJuridica());
-        f.setVisible(true);
-    }//GEN-LAST:event_jButtonDetalhesActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        JFileChooser fChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-        fChooser.setDialogTitle("Selecione o arquivo para enviar");
-        int ret = fChooser.showOpenDialog(this);
-        
-        if(ret == JFileChooser.APPROVE_OPTION) {
-            
-            
-            try {
-                
-                File f = fChooser.getSelectedFile();
-                byte[] content = FileUtils.readFileToByteArray(f);
-                
-                /*
-                MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
-                String type = fileTypeMap.getContentType(f);
-                byte[] binFile = new byte[(int) f.length()];
-                FileInputStream in = new FileInputStream(f);
-                in.read(binFile);
-                in.close();
-                System.out.println("data:@" + type + ";base64," + new String(Base64.encodeBase64(binFile)));
-                PrintWriter out = new PrintWriter("teste.txt");
-                out.print("data:@" + type + ";base64," + new String(Base64.encodeBase64(binFile)));
-                out.flush();
-                out.close();
-                */
-                //MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
-                String type = Files.probeContentType(f.toPath());
-                String encoded = java.util.Base64.getEncoder().encodeToString(content);
-                PrintWriter out = new PrintWriter("teste.txt");
-                out.print("data:" + type + ";base64," + DatatypeConverter.printBase64Binary(content));
-                out.flush();
-                out.close();
-                System.out.println(encoded);
-                
-            } catch (IOException e) {
-                JOptionPane.showMessageDialog(this, "Ocorreu um erro na leitura do arquivo:\n"
-                        + e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
-            }
-            
-        }
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     @Override
     public void update(Observable o, Object arg) {
         protocolo = (Protocolo) arg;
-        jTextFieldIdProtocolo.setText(String.valueOf(protocolo.getId()));
-        jTextFieldCliente.setText(protocolo.getPessoaFisica().getNome());
-        jTextFieldDataAbertura.setText(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(protocolo.getDataAbertura()));
-        jTextFieldFone.setText(protocolo.getContato());
-        jTextFieldNroProtocolo.setText(protocolo.getNumero());
-        if(protocolo.getPessoaJuridica() != null) {
-            jLabelCorp.setText("Sim");
-        } else {
-            jLabelCorp.setText("Não");
-        }
         habilitaAtendimento();
-        monitorChat = new ThreadPrintaChat(protocolo, jTextPaneChat);
-        monitorChat.start();
+        //monitorChat = new ThreadPrintaChat(protocolo, jTextPaneChat);
+        //monitorChat.start();
         estadoOperadorInfo.setEmAtendimento(true);
         alteraEstadoOperador();
         apiClient.enviaMensagem(protocolo.getContato(), String.format("Olá! Me chamo %1$s e seu número de protocolo é %2$s. Em que posso ajudar?", user.getName(), protocolo.getNumero()), protocolo.getId());
+        FormAtendimentoPopUp f = new FormAtendimentoPopUp(this, true, user, protocolo, apiClient, this);
+        f.setVisible(true);
+        //Finalizacao fin = f.getFinalizacao();
+        //f.dispose();
+        //estadoOperadorInfo.setEmAtendimento(false);
+        //alteraEstadoOperador();
+        //apiClient.encerraProtocolo(protocolo.getId(), fin.getId());
+        //desabilitaAtendimento();
     }
     
     private User user;
@@ -625,32 +273,10 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
     private List<Finalizacao> finalizacoes;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButtonDetalhes;
-    private javax.swing.JButton jButtonEnviar;
-    private javax.swing.JButton jButtonFinalizar;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabelCorp;
     private javax.swing.JLabel jLabelEstadoOperador;
     private javax.swing.JLabel jLabelOperador;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextFieldChat;
-    private javax.swing.JTextField jTextFieldCliente;
-    private javax.swing.JTextField jTextFieldDataAbertura;
-    private javax.swing.JTextField jTextFieldFone;
-    private javax.swing.JTextField jTextFieldIdProtocolo;
-    private javax.swing.JTextField jTextFieldNroProtocolo;
-    private javax.swing.JTextPane jTextPaneChat;
     private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 
