@@ -44,4 +44,8 @@ public class Config {
     public long chatTimePooling() {
         return Long.parseLong(properties.getProperty("app.chat.pooling.time"));
     }
+    
+    public String getFileExtensionByMimeType(String mimeType) {
+        return properties.getProperty(mimeType);
+    }
 }

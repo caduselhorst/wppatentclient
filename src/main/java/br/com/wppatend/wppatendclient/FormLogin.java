@@ -6,13 +6,12 @@
 package br.com.wppatend.wppatendclient;
 
 import br.com.wppatend.wppatendclient.restapiclient.ApiReturn;
-import br.com.wppatend.wppatendclient.restapiclient.ChatReturn;
-import br.com.wppatend.wppatendclient.restapiclient.Pageable;
 import br.com.wppatend.wppatendclient.restapiclient.RestApiClient;
 import br.com.wppatend.wppatendclient.restapiclient.User;
 import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import javax.swing.AbstractAction;
@@ -232,6 +231,16 @@ public class FormLogin extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 System.setProperty("log4j.configuration", "file:log4j.xml");
+                File f = new File("media");
+                if(!f.exists()) {
+                    f.mkdir();
+                    File doc = new File("media/documents");
+                    doc.mkdir();
+                    File audio = new File("media/audios");
+                    audio.mkdir();
+                    File img = new File("media/images");
+                    img.mkdir();
+                }
                 new FormLogin().setVisible(true);
             }
         });

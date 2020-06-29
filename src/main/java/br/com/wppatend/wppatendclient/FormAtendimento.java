@@ -7,6 +7,7 @@ package br.com.wppatend.wppatendclient;
 
 import br.com.lgss.icecontrolclient.forms.FormDialogoDeOpcao;
 import br.com.wppatend.wppatendclient.models.Finalizacao;
+import br.com.wppatend.wppatendclient.models.LinkController;
 import br.com.wppatend.wppatendclient.models.Protocolo;
 import br.com.wppatend.wppatendclient.restapiclient.ApiReturn;
 import br.com.wppatend.wppatendclient.restapiclient.EstadoOperadorInfo;
@@ -14,14 +15,22 @@ import br.com.wppatend.wppatendclient.restapiclient.RestApiClient;
 import br.com.wppatend.wppatendclient.restapiclient.User;
 import br.com.wppatend.wppatendclient.threads.ThreadConsultaProtocolo;
 import br.com.wppatend.wppatendclient.threads.ThreadPrintaChat;
+import jakarta.xml.bind.DatatypeConverter;
 import java.awt.Color;
 import java.awt.Cursor;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
 import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-import javax.swing.JFrame;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileSystemView;
+import javax.swing.text.DefaultCaret;
+import org.apache.commons.io.FileUtils;
 
 /**
  *
@@ -120,6 +129,7 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         jPanel4 = new javax.swing.JPanel();
         jTextFieldChat = new javax.swing.JTextField();
         jButtonEnviar = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -141,13 +151,17 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         jButton4 = new javax.swing.JButton();
         jLabelOperador = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("WPPAtendimento");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Chat"));
 
         jTextPaneChat.setEditable(false);
         jTextPaneChat.setEnabled(false);
+        ((DefaultCaret)jTextPaneChat.getCaret()).setUpdatePolicy(DefaultCaret.ALWAYS_UPDATE);
+        LinkController linkController = new LinkController();
+        jTextPaneChat.addMouseListener(linkController);
+        jTextPaneChat.addMouseMotionListener(linkController);
         jScrollPane1.setViewportView(jTextPaneChat);
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -169,15 +183,27 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
             }
         });
 
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/matricula.png"))); // NOI18N
+        jButton1.setMnemonic('A');
+        jButton1.setText("Arquivo");
+        jButton1.setToolTipText("");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextFieldChat, javax.swing.GroupLayout.DEFAULT_SIZE, 334, Short.MAX_VALUE)
+                .addComponent(jTextFieldChat, javax.swing.GroupLayout.DEFAULT_SIZE, 278, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButtonEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jButtonEnviar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton1)
                 .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
@@ -186,7 +212,8 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
                 .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextFieldChat, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButtonEnviar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jButtonEnviar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButton1))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -355,7 +382,7 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabelOperador)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabelEstadoOperador, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE))
+                        .addComponent(jLabelEstadoOperador, javax.swing.GroupLayout.DEFAULT_SIZE, 139, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(jToggleButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -522,6 +549,49 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         f.setVisible(true);
     }//GEN-LAST:event_jButtonDetalhesActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        JFileChooser fChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+        fChooser.setDialogTitle("Selecione o arquivo para enviar");
+        int ret = fChooser.showOpenDialog(this);
+        
+        if(ret == JFileChooser.APPROVE_OPTION) {
+            
+            
+            try {
+                
+                File f = fChooser.getSelectedFile();
+                byte[] content = FileUtils.readFileToByteArray(f);
+                
+                /*
+                MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
+                String type = fileTypeMap.getContentType(f);
+                byte[] binFile = new byte[(int) f.length()];
+                FileInputStream in = new FileInputStream(f);
+                in.read(binFile);
+                in.close();
+                System.out.println("data:@" + type + ";base64," + new String(Base64.encodeBase64(binFile)));
+                PrintWriter out = new PrintWriter("teste.txt");
+                out.print("data:@" + type + ";base64," + new String(Base64.encodeBase64(binFile)));
+                out.flush();
+                out.close();
+                */
+                //MimetypesFileTypeMap fileTypeMap = new MimetypesFileTypeMap();
+                String type = Files.probeContentType(f.toPath());
+                String encoded = java.util.Base64.getEncoder().encodeToString(content);
+                PrintWriter out = new PrintWriter("teste.txt");
+                out.print("data:" + type + ";base64," + DatatypeConverter.printBase64Binary(content));
+                out.flush();
+                out.close();
+                System.out.println(encoded);
+                
+            } catch (IOException e) {
+                JOptionPane.showMessageDialog(this, "Ocorreu um erro na leitura do arquivo:\n"
+                        + e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
+            }
+            
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     @Override
     public void update(Observable o, Object arg) {
         protocolo = (Protocolo) arg;
@@ -540,6 +610,7 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
         monitorChat.start();
         estadoOperadorInfo.setEmAtendimento(true);
         alteraEstadoOperador();
+        apiClient.enviaMensagem(protocolo.getContato(), String.format("Olá! Me chamo %1$s e seu número de protocolo é %2$s. Em que posso ajudar?", user.getName(), protocolo.getNumero()), protocolo.getId());
     }
     
     private User user;
@@ -554,6 +625,7 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
     private List<Finalizacao> finalizacoes;
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButtonDetalhes;
     private javax.swing.JButton jButtonEnviar;

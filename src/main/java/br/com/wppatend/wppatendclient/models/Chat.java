@@ -12,53 +12,62 @@ import java.util.Date;
  * @author pge
  */
 public class Chat {
-    
-    private long idchat;
-    private long protocolo;
-    private String msg_texto;
-    private byte[] msg_voz;
-    private byte[] msg_arquivo;
+
+    private Long idchat;
+    private Long protocolo;
+    private String tipo;
+    private String mimetype;
+    private String body;
+    private String legenda;
     private String tx_rx;
     private Date data_tx_rx;
 
-    public long getIdchat() {
+    public Long getIdchat() {
         return idchat;
     }
 
-    public void setIdchat(long idchat) {
+    public void setIdchat(Long idchat) {
         this.idchat = idchat;
     }
 
-    public long getProtocolo() {
+    public Long getProtocolo() {
         return protocolo;
     }
 
-    public void setProtocolo(long protocolo) {
+    public void setProtocolo(Long protocolo) {
         this.protocolo = protocolo;
     }
 
-    public String getMsg_texto() {
-        return msg_texto;
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setMsg_texto(String msg_texto) {
-        this.msg_texto = msg_texto;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
-    public byte[] getMsg_voz() {
-        return msg_voz;
+    public String getMimetype() {
+        return mimetype;
     }
 
-    public void setMsg_voz(byte[] msg_voz) {
-        this.msg_voz = msg_voz;
+    public void setMimetype(String mimetype) {
+        this.mimetype = mimetype;
     }
 
-    public byte[] getMsg_arquivo() {
-        return msg_arquivo;
+    public String getBody() {
+        return body;
     }
 
-    public void setMsg_arquivo(byte[] msg_arquivo) {
-        this.msg_arquivo = msg_arquivo;
+    public void setBody(String body) {
+        this.body = body;
+    }
+
+    public String getLegenda() {
+        return legenda;
+    }
+
+    public void setLegenda(String legenda) {
+        this.legenda = legenda;
     }
 
     public String getTx_rx() {
@@ -76,7 +85,5 @@ public class Chat {
     public void setData_tx_rx(Date data_tx_rx) {
         this.data_tx_rx = data_tx_rx;
     }
-    
-    
-    
+
 }

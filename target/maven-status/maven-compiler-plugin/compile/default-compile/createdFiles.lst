@@ -24,6 +24,7 @@ br/com/wppatend/wppatendclient/threads/ThreadConsultaProtocolo.class
 br/com/wppatend/wppatendclient/threads/ThreadPrintaChat.class
 br/com/wppatend/wppatendclient/FormDetalhes.class
 br/com/wppatend/wppatendclient/FormFinalizacao$2.class
+br/com/wppatend/wppatendclient/FormAtendimento$7.class
 br/com/wppatend/wppatendclient/FormLogin$2.class
 br/com/wppatend/wppatendclient/restapiclient/ApiReturn.class
 br/com/wppatend/wppatendclient/models/Protocolo.class
