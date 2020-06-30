@@ -8,15 +8,12 @@ package br.com.wppatend.wppatendclient;
 import br.com.wppatend.wppatendclient.models.Finalizacao;
 import br.com.wppatend.wppatendclient.models.LinkController;
 import br.com.wppatend.wppatendclient.models.Protocolo;
-import br.com.wppatend.wppatendclient.restapiclient.EstadoOperadorInfo;
 import br.com.wppatend.wppatendclient.restapiclient.RestApiClient;
 import br.com.wppatend.wppatendclient.restapiclient.User;
-import br.com.wppatend.wppatendclient.threads.ThreadConsultaProtocolo;
 import br.com.wppatend.wppatendclient.threads.ThreadPrintaChat;
 import java.awt.Cursor;
 import java.text.SimpleDateFormat;
 import java.util.List;
-import javax.annotation.PostConstruct;
 import javax.swing.JOptionPane;
 import javax.swing.text.DefaultCaret;
 
