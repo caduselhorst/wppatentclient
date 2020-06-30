@@ -6745,3 +6745,4 @@ Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
 30/06/2020 08:27:37 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
 30/06/2020 08:27:37 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
 30/06/2020 08:27:46 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
+30/06/2020 10:39:58 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
