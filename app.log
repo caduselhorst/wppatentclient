@@ -6746,3 +6746,1776 @@ Caused by: java.net.ConnectException: Conexão recusada (Connection refused)
 30/06/2020 08:27:37 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
 30/06/2020 08:27:46 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
 30/06/2020 10:39:58 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 16:54:57 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 16:55:11 INFO  ThreadConsultaProtocolo:55 - Novo protocolo associado ao operador. Protocolo 2020063016
+30/06/2020 16:55:11 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 16:55:12 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 16:55:12 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 16:55:53 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 16:57:17 INFO  ThreadConsultaProtocolo:55 - Novo protocolo associado ao operador. Protocolo 2020063017
+30/06/2020 16:57:17 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 16:57:17 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 16:57:17 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 16:58:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:58:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:58:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.NullPointerException
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 16:59:34 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:02:32 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 17:03:33 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:04:34 INFO  ThreadConsultaProtocolo:55 - Novo protocolo associado ao operador. Protocolo 2020063020
+30/06/2020 17:04:34 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 17:04:39 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 17:04:40 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 17:07:53 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:53 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:53 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:53 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:54 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:54 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:54 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:07:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:36 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:38 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:39 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:39 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:40 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:41 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:42 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:42 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:49 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:52 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:08:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:40 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:41 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:41 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:42 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:44 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:47 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:48 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:48 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:49 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:49 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:50 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:51 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:51 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:52 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:53 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:54 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:55 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:56 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:57 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:58 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:09:59 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:00 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:01 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:02 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:03 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:04 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:05 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:06 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:07 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:08 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:09 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:10 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:11 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:12 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:13 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:14 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:15 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:16 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:17 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:18 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:19 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:20 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:21 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:22 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:23 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:24 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:25 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:26 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:27 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:28 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:29 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:30 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:31 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:32 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:33 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:34 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:35 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:35 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:35 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:35 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:36 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+java.lang.ArrayIndexOutOfBoundsException: 0
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.getURIFileAfterSave(ThreadPrintaChat.java:164)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:106)
+30/06/2020 17:10:36 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:11:31 INFO  ThreadConsultaProtocolo:55 - Novo protocolo associado ao operador. Protocolo 2020063021
+30/06/2020 17:11:31 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 17:11:31 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 17:11:31 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 17:20:15 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:20:15 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 17:20:22 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 17:20:22 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 17:33:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:33:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:33:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:33:45 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:33:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:33:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:33:46 ERROR ThreadPrintaChat:145 - Ocorreu um erro ao carregar o chat
+jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
+	at org.glassfish.jersey.client.JerseyInvocation.convertToException(JerseyInvocation.java:954)
+	at org.glassfish.jersey.client.JerseyInvocation.translate(JerseyInvocation.java:739)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$1(JerseyInvocation.java:623)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:390)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:621)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:404)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:300)
+	at br.com.wppatend.wppatendclient.restapiclient.RestApiClient.getChat(RestApiClient.java:105)
+	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
+30/06/2020 17:35:19 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:35:56 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.

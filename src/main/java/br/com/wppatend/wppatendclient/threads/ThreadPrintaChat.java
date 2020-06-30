@@ -176,6 +176,10 @@ public class ThreadPrintaChat extends Thread {
                 file = new File("media/images/" + chat.getProtocolo() + "_" + chat.getIdchat() + "." + Config.getInstance().getFileExtensionByMimeType(contentType));
                 break;
             }
+            case "audio": {
+                file = new File("media/audios/" + chat.getProtocolo() + "_" + chat.getIdchat() + "." + Config.getInstance().getFileExtensionByMimeType(contentType));
+                break;
+            }
             
         }
         if(file == null) {
