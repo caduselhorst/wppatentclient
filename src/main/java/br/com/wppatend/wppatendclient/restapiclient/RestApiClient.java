@@ -8,7 +8,6 @@ package br.com.wppatend.wppatendclient.restapiclient;
 import br.com.wppatend.wppatendclient.models.Config;
 import br.com.wppatend.wppatendclient.models.Finalizacao;
 import br.com.wppatend.wppatendclient.models.Protocolo;
-import com.sun.javafx.scene.control.skin.VirtualFlow;
 import jakarta.ws.rs.client.Client;
 import jakarta.ws.rs.client.ClientBuilder;
 import jakarta.ws.rs.client.Entity;
@@ -17,7 +16,6 @@ import jakarta.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import javax.naming.ldap.HasControls;
 import org.apache.log4j.Logger;
 
 
