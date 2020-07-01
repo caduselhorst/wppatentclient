@@ -90,8 +90,10 @@ public class ThreadPrintaChat extends Thread {
                         if(chat.getTx_rx().equals("RECEBIDA")) {
                             switch (chat.getTipo()) {
                                 case "chat": {
+                                    
                                     msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - " + chat.getBody() + "\r\n";
                                     isFile = false;
+                                    logger.debug("Mensagem recebida - texto -> " + msg);
                                     break;
                                 }
                                 
@@ -99,6 +101,7 @@ public class ThreadPrintaChat extends Thread {
                                     msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - ";
                                     url = getURIFileAfterSave(chat).toURL().toString() + "\r\n";
                                     isFile = true;
+                                    logger.debug("Mensagem recebida - outras -> " + msg + "(" + url + ")");
                                     break;
                                 }
                             }
@@ -121,12 +124,14 @@ public class ThreadPrintaChat extends Thread {
                         }
                     
                         if(isFile) {
+                            logger.debug("Insere url arquivo -- Length -> " + textPane.getText().length());
                             textPane.getStyledDocument().insertString(textPane.getText().length(), msg, style);
                             SimpleAttributeSet attrs = new SimpleAttributeSet();
                             StyleConstants.setUnderline(attrs, true);
                             attrs.addAttribute(HTML.Attribute.HREF, url);
                             textPane.getStyledDocument().insertString(textPane.getText().length(), url, attrs);
                         } else {
+                            logger.debug("Insere mensagem -- Length -> " + textPane.getText().length());
                             textPane.getStyledDocument().insertString(textPane.getText().length(), msg, style);
                         }
                         
