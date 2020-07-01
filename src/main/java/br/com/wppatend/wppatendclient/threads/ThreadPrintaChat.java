@@ -39,6 +39,7 @@ public class ThreadPrintaChat extends Thread {
     
     private static final Color MINHA_MSG = Color.BLUE;
     private static final Color CLIENTE_MSG = new Color(255, 140, 0);
+    private static final Color ERRO_MSG = Color.RED;
     
     private static Logger logger = Logger.getLogger(ThreadPrintaChat.class);
     private Protocolo protocolo;
@@ -125,14 +126,14 @@ public class ThreadPrintaChat extends Thread {
                     
                         if(isFile) {
                             logger.debug("Insere url arquivo -- Length -> " + textPane.getText().length());
-                            textPane.getStyledDocument().insertString(textPane.getText().length(), msg, style);
+                            textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), msg, style);
                             SimpleAttributeSet attrs = new SimpleAttributeSet();
                             StyleConstants.setUnderline(attrs, true);
                             attrs.addAttribute(HTML.Attribute.HREF, url);
-                            textPane.getStyledDocument().insertString(textPane.getText().length(), url, attrs);
+                            textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), url, attrs);
                         } else {
                             logger.debug("Insere mensagem -- Length -> " + textPane.getText().length());
-                            textPane.getStyledDocument().insertString(textPane.getText().length(), msg, style);
+                            textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), msg, style);
                         }
                         
                     } catch (BadLocationException ex) {
@@ -141,11 +142,12 @@ public class ThreadPrintaChat extends Thread {
                     pageNumber++;
                 }
             } catch (Exception e) {
+                StyleConstants.setForeground(style, MINHA_MSG);
                 logger.error("Ocorreu um erro ao carregar o chat", e);
                 String erro = "Ocorreu um erro ao carregar o chat\n" + e.getMessage() + "\n";
                 AttributeSet as = textPane.getCharacterAttributes();
                 try {
-                    textPane.getStyledDocument().insertString(textPane.getText().length()-1, erro, as);
+                    textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), erro, style);
                 } catch (BadLocationException ex) {
                     logger.error("Erro ao inserir dados no painel de chat", ex);
                 }

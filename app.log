@@ -8543,3 +8543,6 @@ jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
 01/07/2020 08:47:33 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
 01/07/2020 08:48:27 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
 01/07/2020 08:55:33 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+01/07/2020 10:06:53 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
+01/07/2020 10:06:53 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+01/07/2020 10:06:53 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
