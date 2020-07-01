@@ -50,7 +50,7 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
         }
         printaChat = new ThreadPrintaChat(protocolo, jTextPaneChat);
         printaChat.start();
-        jTextArea1.requestFocus();
+        jTextField1.requestFocus();
         carregaFinalizacoes();
     }
     
@@ -72,9 +72,8 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
         jButton3 = new javax.swing.JButton();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
         jButton2 = new javax.swing.JButton();
+        jTextField1 = new javax.swing.JTextField();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPaneChat = new javax.swing.JTextPane();
@@ -111,17 +110,6 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
             }
         });
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jTextArea1.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jTextArea1KeyPressed(evt);
-            }
-        });
-        jScrollPane1.setViewportView(jTextArea1);
-
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/finalizar.png"))); // NOI18N
         jButton2.setMnemonic('F');
         jButton2.setText("Finalizar");
@@ -131,12 +119,15 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
             }
         });
 
+        jTextField1.setText("jTextField1");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jScrollPane1)
+                .addContainerGap()
+                .addComponent(jTextField1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
@@ -147,11 +138,12 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton3)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton3)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2)
                 .addContainerGap())
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
         );
 
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -170,7 +162,7 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -328,23 +320,17 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        if(!jTextArea1.getText().isEmpty()) {
+        if(!jTextField1.getText().isEmpty()) {
             try {
-                apiClient.enviaMensagem(protocolo.getContato(), jTextArea1.getText(), protocolo.getId());
-                jTextArea1.setText(null);
-                jTextArea1.requestFocus();
+                apiClient.enviaMensagem(protocolo.getContato(), jTextField1.getText(), protocolo.getId());
+                jTextField1.setText(null);
+                jTextField1.requestFocus();
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(this, "Ocorreu um erro ao tentar enviar a mensagem:\n"
                         + e.getMessage() + "\nInforme ao administrador do sistema", "Erro", JOptionPane.ERROR_MESSAGE);
             }
         }
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jTextArea1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextArea1KeyPressed
-        if(evt.getKeyCode() == 10) {
-            jButton3ActionPerformed(null);
-        }
-    }//GEN-LAST:event_jTextArea1KeyPressed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         FormDetalhes f = new FormDetalhes(null, true, protocolo.getPessoaFisica(), protocolo.getPessoaJuridica());
@@ -419,9 +405,8 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextFieldCliente;
     private javax.swing.JTextField jTextFieldDataAbertura;
     private javax.swing.JTextField jTextFieldFoneContato;

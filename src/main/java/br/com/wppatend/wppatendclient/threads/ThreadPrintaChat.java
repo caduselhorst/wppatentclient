@@ -61,12 +61,6 @@ public class ThreadPrintaChat extends Thread {
 
     @Override
     public void run() {
-        logger.info("Iniciando processamento do chat");
-        try {
-            textPane.getStyledDocument().insertString(0, "***** NOVO ATENDIMENTO *****", textPane.getCharacterAttributes());
-        } catch (BadLocationException ex) {
-            logger.error("Erro ao inserir dados no painel de chat", ex);
-        }
         try {
             poolingtime = Config.getInstance().chatTimePooling();
         } catch (Exception e) {
@@ -96,14 +90,14 @@ public class ThreadPrintaChat extends Thread {
                         if(chat.getTx_rx().equals("RECEBIDA")) {
                             switch (chat.getTipo()) {
                                 case "chat": {
-                                    msg = "\n" + sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - " + chat.getBody();
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - " + chat.getBody() + "\r\n";
                                     isFile = false;
                                     break;
                                 }
                                 
                                 default: {
-                                    msg = "\n" + sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - ";
-                                    url = getURIFileAfterSave(chat).toURL().toString();
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - ";
+                                    url = getURIFileAfterSave(chat).toURL().toString() + "\r\n";
                                     isFile = true;
                                     break;
                                 }
@@ -113,13 +107,13 @@ public class ThreadPrintaChat extends Thread {
                             
                             switch (chat.getTipo()) {
                                 case "chat": {
-                                    msg = "\n" + sdf.format(chat.getData_tx_rx()) + " - EU" + " - " + chat.getBody();
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - EU" + " - " + chat.getBody() + "\r\n";
                                     isFile = false;
                                     break;
                                 }
                                 
                                 default: {
-                                    msg = "\n" + sdf.format(chat.getData_tx_rx()) + " - EU" + " - <a ref=\"" + getURIFileAfterSave(chat) + "\">" + getURIFileAfterSave(chat) + "</a>";
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - EU" + " - <a ref=\"" + getURIFileAfterSave(chat) + "\">" + getURIFileAfterSave(chat) + "</a>\r\n";
                                     break;
                                 }
                             }
@@ -135,7 +129,7 @@ public class ThreadPrintaChat extends Thread {
                         } else {
                             textPane.getStyledDocument().insertString(textPane.getText().length(), msg, style);
                         }
-                        //textPane.getStyledDocument().insertString(textPane.getText().length(), msg, style);
+                        
                     } catch (BadLocationException ex) {
                         logger.error("Erro ao inserir dados no painel de chat", ex);
                     }

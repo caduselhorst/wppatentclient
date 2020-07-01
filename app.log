@@ -8519,3 +8519,27 @@ jakarta.ws.rs.InternalServerErrorException: HTTP 500 Internal Server Error
 	at br.com.wppatend.wppatendclient.threads.ThreadPrintaChat.run(ThreadPrintaChat.java:89)
 30/06/2020 17:35:19 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
 30/06/2020 17:35:56 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 17:52:59 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:53:00 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 17:53:01 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 17:53:01 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 17:56:35 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 17:56:36 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 17:56:37 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 17:56:37 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 18:03:35 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 18:03:36 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 18:03:37 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 18:03:37 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 18:03:53 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 18:03:53 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+30/06/2020 18:03:54 INFO  ThreadPrintaChat:64 - Iniciando processamento do chat
+30/06/2020 18:03:54 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+30/06/2020 18:05:27 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: op001
+30/06/2020 18:07:29 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+01/07/2020 08:47:14 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
+01/07/2020 08:47:32 INFO  ThreadConsultaProtocolo:55 - Novo protocolo associado ao operador. Protocolo 2020070177
+01/07/2020 08:47:32 INFO  ThreadConsultaProtocolo:62 - Identificado novo atendimento. Notificando observers
+01/07/2020 08:47:33 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
+01/07/2020 08:48:27 INFO  ThreadConsultaProtocolo:47 - Iniciando verificação de protocolos -> Usuario: ag001
+01/07/2020 08:55:33 INFO  ThreadConsultaProtocolo:69 - Verificação de protocolo finalizada.
