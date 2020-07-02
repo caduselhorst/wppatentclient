@@ -188,7 +188,9 @@ public class FormAtendimento extends javax.swing.JFrame implements Observer {
             
             setCursor(new Cursor(Cursor.WAIT_CURSOR));
             
-            consultaProtocolo.parar();
+            if(consultaProtocolo != null) {
+                consultaProtocolo.parar();
+            }
             
             ApiReturn ret = apiClient.logout(user.getId());
             
