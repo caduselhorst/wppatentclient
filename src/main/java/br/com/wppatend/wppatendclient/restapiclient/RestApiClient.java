@@ -119,6 +119,20 @@ public class RestApiClient {
         
     }
     
+    public ApiReturn enviaArquivo(String telefone, String arquivo, String nomeArquivo, String legenda, Long protocolo) {
+        SendBase64FileInfo info = new SendBase64FileInfo();
+        info.setCaption(legenda);
+        info.setFilename(nomeArquivo);
+        info.setMessage(arquivo);
+        info.setPhoneNumber(telefone);
+        info.setProtocolo(protocolo);
+        
+        return client.target(urlApi)
+                .path("/chat/sendBase64File")
+                .request()
+                .post(Entity.entity(info, MediaType.APPLICATION_JSON), ApiReturn.class);
+    }
+    
     public List<Finalizacao> getFinalizacoes() {
         String path = "/finalizacoes";
         

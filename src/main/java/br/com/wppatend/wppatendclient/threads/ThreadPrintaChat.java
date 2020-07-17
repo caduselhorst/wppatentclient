@@ -117,7 +117,10 @@ public class ThreadPrintaChat extends Thread {
                                 }
                                 
                                 default: {
-                                    msg = sdf.format(chat.getData_tx_rx()) + " - EU" + " - <a ref=\"" + getURIFileAfterSave(chat) + "\">" + getURIFileAfterSave(chat) + "</a>\r\n";
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - ";
+                                    url = getURIFileAfterSave(chat).toURL().toString();
+                                    isFile = true;
+                                    logger.debug("Mensagem enviada - outras -> " + msg + "(" + url + ")");
                                     break;
                                 }
                             }
@@ -131,6 +134,7 @@ public class ThreadPrintaChat extends Thread {
                             StyleConstants.setUnderline(attrs, true);
                             attrs.addAttribute(HTML.Attribute.HREF, url);
                             textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), url, attrs);
+                            textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), "\r\n", style);
                         } else {
                             logger.debug("Insere mensagem -- Length -> " + textPane.getText().length());
                             textPane.getStyledDocument().insertString(textPane.getStyledDocument().getLength(), msg, style);

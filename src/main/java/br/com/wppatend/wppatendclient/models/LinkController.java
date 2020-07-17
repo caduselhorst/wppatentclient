@@ -17,12 +17,15 @@ import javax.swing.text.DefaultStyledDocument;
 import javax.swing.text.Document;
 import javax.swing.text.Element;
 import javax.swing.text.html.HTML;
+import org.apache.log4j.Logger;
 
 /**
  *
  * @author pge
  */
 public class LinkController extends MouseAdapter implements MouseMotionListener {
+    
+    private static final Logger log = Logger.getLogger(LinkController.class);
 
     @Override
     public void mouseClicked(MouseEvent e) {
@@ -39,10 +42,11 @@ public class LinkController extends MouseAdapter implements MouseMotionListener 
                 String href = (String) a.getAttribute(HTML.Attribute.HREF);
                 if (href != null) {
                     try {
+                        log.info(String.format("URL [%1$s]", href));
                         java.net.URI uri = new java.net.URI(href);
                         desktop.browse(uri);
                     } catch (Exception ev) {
-                        System.err.println(ev.getMessage());
+                        log.error("Erro ao clicar no link", ev);
                     }
                 }
             }//if (doc instanceof DefaultStyledDocument)

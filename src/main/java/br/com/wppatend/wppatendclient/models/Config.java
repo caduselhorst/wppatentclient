@@ -8,7 +8,10 @@ package br.com.wppatend.wppatendclient.models;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  *
@@ -46,6 +49,10 @@ public class Config {
     }
     
     public String getFileExtensionByMimeType(String mimeType) {
-        return properties.getProperty(mimeType);
+        return StringUtils.split(properties.getProperty(mimeType),",")[0];
+    }
+    
+    public Set<Map.Entry<Object, Object>> getAllProperties() {
+        return properties.entrySet();
     }
 }

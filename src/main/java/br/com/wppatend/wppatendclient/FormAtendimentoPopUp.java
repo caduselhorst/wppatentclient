@@ -5,6 +5,7 @@
  */
 package br.com.wppatend.wppatendclient;
 
+import br.com.wppatend.wppatendclient.models.Config;
 import br.com.wppatend.wppatendclient.models.Finalizacao;
 import br.com.wppatend.wppatendclient.models.LinkController;
 import br.com.wppatend.wppatendclient.models.Protocolo;
@@ -12,10 +13,20 @@ import br.com.wppatend.wppatendclient.restapiclient.RestApiClient;
 import br.com.wppatend.wppatendclient.restapiclient.User;
 import br.com.wppatend.wppatendclient.threads.ThreadPrintaChat;
 import java.awt.Cursor;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Map.Entry;
+import java.util.Set;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
+import javax.swing.filechooser.FileSystemView;
 import javax.swing.text.DefaultCaret;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
 
 /**
  *
@@ -74,6 +85,7 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jTextField1 = new javax.swing.JTextField();
+        jButton4 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextPaneChat = new javax.swing.JTextPane();
@@ -125,15 +137,26 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
             }
         });
 
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/upload.png"))); // NOI18N
+        jButton4.setMnemonic('A');
+        jButton4.setText("Arquivo");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1)
+                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 502, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -145,7 +168,8 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2)
                     .addComponent(jButton3)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton4))
                 .addContainerGap())
         );
 
@@ -383,9 +407,74 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
             jButton3ActionPerformed(null);
         }
     }//GEN-LAST:event_jTextField1KeyPressed
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        
+        try {
+            JFileChooser fc = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+            fc.setDialogTitle("Selecione um arquivo para enviar");
+            fc.setFileSelectionMode(JFileChooser.FILES_ONLY);
+            int returnValue = fc.showOpenDialog(null);
+            if(returnValue == JFileChooser.APPROVE_OPTION) {
+                File file = fc.getSelectedFile();
+                String encoded = Base64.encodeBase64String(readFileToByteArray(file));
+                String ext = "";
+                String mimetype = "";
+                if(file.getName().contains(".")) {
+                    ext = file.getName().substring(file.getName().lastIndexOf(".") + 1, file.getName().length());
+                }
+                
+                mimetype = getMimeTypeByFileExtensio(ext);
+                LOG.info(String.format("Extensão arquivo: [%1$s] Mimetype: [%2$s]", ext, mimetype));
+                
+                encoded = "data:" + mimetype + ";base64," + encoded;
+                //LOG.info(String.format("Encoded: [%1$s]", encoded));
+                
+                apiClient.enviaArquivo(protocolo.getContato(), encoded, file.getName(), file.getName(), protocolo.getId());
+
+            }
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Ocorreu um erro ao realizar a leitura do arquivo:\n"
+                    + e.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
+        }
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     public Finalizacao getFinalizacao() {
         return finalizacao;
+    }
+    
+    private String getMimeTypeByFileExtensio(String extension) throws IOException {
+        
+        Set<Entry<Object, Object>> properties = Config.getInstance().getAllProperties();
+        
+        String ret = "application/octect-stream";
+        
+        if(properties.stream()
+                .filter(s -> ((String) s.getValue()).contains(extension))
+                .count() > 0) {
+            return StringUtils.split(properties.stream()
+                .filter(s -> ((String) s.getValue()).contains(extension))
+                .toArray()[0].toString(), "=")[0];
+        }
+        
+        
+        
+        return ret;
+    }
+    
+    private static byte[] readFileToByteArray(File file) {
+        FileInputStream fis = null;
+        // Creating a byte array using the length of the file
+        // file.length returns long which is cast to int
+        byte[] bArray = new byte[(int) file.length()];
+        try {
+            fis = new FileInputStream(file);
+            fis.read(bArray);
+            fis.close();
+        } catch (IOException ioExp) {
+            ioExp.printStackTrace();
+        }
+        return bArray;
     }
     
     private Protocolo protocolo;
@@ -395,12 +484,16 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
     private Finalizacao finalizacao;
     private List<Finalizacao> finalizacoes;
     private FormAtendimento formAtendimento;
+    
+    private static final Logger LOG = Logger.getLogger(FormAtendimentoPopUp.class);
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

@@ -5,6 +5,7 @@
  */
 package br.com.wppatend.wppatendclient;
 
+import br.com.wppatend.wppatendclient.models.Config;
 import br.com.wppatend.wppatendclient.restapiclient.ApiReturn;
 import br.com.wppatend.wppatendclient.restapiclient.RestApiClient;
 import br.com.wppatend.wppatendclient.restapiclient.User;
@@ -12,13 +13,17 @@ import java.awt.Cursor;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Set;
 import javax.swing.AbstractAction;
 import javax.swing.JComponent;
 import javax.swing.JOptionPane;
 import javax.swing.JRootPane;
 import javax.swing.KeyStroke;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  *
@@ -227,10 +232,15 @@ public class FormLogin extends javax.swing.JFrame {
         }
         //</editor-fold>
         
+        
+        
+        
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 System.setProperty("log4j.configuration", "file:log4j.xml");
+                
                 File f = new File("media");
                 if(!f.exists()) {
                     f.mkdir();
