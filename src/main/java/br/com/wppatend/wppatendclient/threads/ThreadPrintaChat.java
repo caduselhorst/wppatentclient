@@ -117,7 +117,7 @@ public class ThreadPrintaChat extends Thread {
                                 }
                                 
                                 default: {
-                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - ";
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - EU - ";
                                     url = getURIFileAfterSave(chat).toURL().toString();
                                     isFile = true;
                                     logger.debug("Mensagem enviada - outras -> " + msg + "(" + url + ")");
