@@ -92,14 +92,15 @@ public class ThreadPrintaChat extends Thread {
                             switch (chat.getTipo()) {
                                 case "chat": {
                                     
-                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - " + chat.getBody() + "\r\n";
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + 
+                                            (protocolo.getPessoaFisica() == null ? "CLIENTE NÃO IDENTIFICADO" : protocolo.getPessoaFisica().getNome()) + " - " + chat.getBody() + "\r\n";
                                     isFile = false;
                                     logger.debug("Mensagem recebida - texto -> " + msg);
                                     break;
                                 }
                                 
                                 default: {
-                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + protocolo.getPessoaFisica().getNome() + " - ";
+                                    msg = sdf.format(chat.getData_tx_rx()) + " - " + (protocolo.getPessoaFisica() == null ? "CLIENTE NÃO IDENTIFICADO" : protocolo.getPessoaFisica().getNome()) + " - ";
                                     url = getURIFileAfterSave(chat).toURL().toString() + "\r\n";
                                     isFile = true;
                                     logger.debug("Mensagem recebida - outras -> " + msg + "(" + url + ")");

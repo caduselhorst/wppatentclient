@@ -48,8 +48,9 @@ public class FormAtendimentoPopUp extends javax.swing.JFrame {
     }
     
     private void init() {
-        setTitle("Novo atendimento - " + protocolo.getContato() + " - " + protocolo.getPessoaFisica().getNome());
-        jTextFieldCliente.setText(protocolo.getPessoaFisica().getNome());
+        setTitle("Novo atendimento - " + protocolo.getContato() + " - " + 
+                (protocolo.getPessoaFisica() == null ? "CLIENTE NÃO IDENTIFICADO" : protocolo.getPessoaFisica().getNome()));
+        jTextFieldCliente.setText(protocolo.getPessoaFisica() == null ? "CLIENTE NÃO IDENTIFICADO" : protocolo.getPessoaFisica().getNome());
         jTextFieldDataAbertura.setText(new SimpleDateFormat("dd/MM/yyyy HH:mm:ss").format(protocolo.getDataAbertura()));
         jTextFieldFoneContato.setText(protocolo.getContato());
         jTextFieldIdProtocolo.setText(String.valueOf(protocolo.getId()));
